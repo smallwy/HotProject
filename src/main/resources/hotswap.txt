@@ -1,0 +1,38 @@
+# 热更新配置文件
+# 使用#开头的是注释行，会被忽略
+
+
+## 热更说明
+## 热更也是有顺序的，配置在前面的会先重载
+## 热更配置文件在被修改后，会自动触发热更操作，大约在10s后进行热更
+##
+## 不允许对字段进行添加、删除、修改修饰符
+## 可以对字段的值做修改，静态字段的值即使修改了也不会生效，实例字段的值修改后会在创建新实例时生效
+##
+## 不允许对方法进行添加、删除、修改方法签名
+## 只能修改方法体内容
+
+
+## 热更开关
+## 如果开关没有打开，不会执行类型重载操作
+## 只有switch=on时，才认为热更开关被打开了
+switch=on
+
+
+## 热更脚本
+## 脚本类型在被热更成功后，还会自动调用它的execute方法
+#com.gameart.hotswap.example.OneShotScript
+
+
+## 对单个普通类型进行热更
+## 一行写一个类名
+#com.gameart.hotswap.example.HotSwapExample$Inner
+#com.gameart.hotswap.BeforeNonexist
+com.gameart.hotswap.example.HotSwapExample
+
+## 对多个普通类型进行热更
+## 一行写多个类名，类名之间用分号分隔
+## 多个类型在热更时，要么同时成功，要么同时失败
+#com.gameart.hotswap.example.HotSwapExample;com.gameart.hotswap.example.HotSwapTest
+
+
