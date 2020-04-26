@@ -8,7 +8,6 @@ package com.gameart.hotswap;
  * 热更脚本可被用于处理任意逻辑。
  * 比如游戏服中的角色数据定时存储机制失效，需要手动将角色数据刷新到数据库，此时就可以通过脚本类型来处理。
  *
- * @author zhangfei
  */
 public interface HotSwapScript {
 

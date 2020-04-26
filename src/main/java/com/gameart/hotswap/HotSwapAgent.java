@@ -11,7 +11,6 @@ import java.util.List;
  * 热更新代理。
  * 通过使用java代理的方式，对已经加载过的代码做动态更新操作。
  *
- * @author zhangfei
  */
 public class HotSwapAgent {
 

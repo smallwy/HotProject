@@ -20,8 +20,6 @@ import java.util.jar.JarFile;
 
 /**
  * 热更管理器，对部分代码进行动态更新。
- *
- * @author zhangfei
  */
 public class HotSwapManager {
 
