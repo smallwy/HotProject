@@ -1,7 +1,8 @@
 package com.gameart.hotswap;
 
-import com.gameart.utils.watch.FileChangeType;
-import com.gameart.utils.watch.FileWatchManager;
+
+import com.gameart.watch.FileChangeType;
+import com.gameart.watch.FileWatchManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -56,7 +57,7 @@ public class HotSwapManager {
     private boolean needReload;
 
     /**
-     * 服务方法{@link #execute()}被执行的频率太快了，使用手段降低实际方法体被执行的频率。
+     * 服务方法{@link #}被执行的频率太快了，使用手段降低实际方法体被执行的频率。
      * 每次tick自增，一秒大约tick次数为30。
      */
     private int tickTimes;
